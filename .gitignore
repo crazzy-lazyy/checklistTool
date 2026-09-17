@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller 构建产物
+build/
+dist/
+*.spec.bak
+
+# 运行时数据
+user_data/
+*.log
+build_log.txt
+
+# 系统/IDE
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

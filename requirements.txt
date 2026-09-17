@@ -1,0 +1,27 @@
+# 清单对比与校审工具 - 运行依赖（已按构建机实测版本精确锁定）
+# Checklist Comparison & Validation Tool - Runtime Dependencies (pinned)
+#
+# 注意：
+# - 开发模式运行需要 Python >= 3.11（pandas 3.x 要求）；分发版为冻结 exe，目标机器无需 Python。
+# - 打包工具链见 requirements-build.txt。
+
+# GUI 框架
+PyQt6==6.11.0
+
+# 表格与数据处理
+pandas==3.0.5
+openpyxl==3.1.5
+xlrd==2.0.2
+xlsxwriter==3.2.9
+
+# Word 文档
+python-docx==1.2.0
+
+# PDF 导出（带格式）
+reportlab==4.5.1
+
+# PDF 导入（抽取表格/文本）
+pdfplumber==0.11.10
+
+# AI 服务请求（内网 LLM API）
+requests==2.34.2

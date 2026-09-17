@@ -1,0 +1,11 @@
+# 清单对比与校审工具 - 构建机专用依赖（打包/图标生成）
+# Build-only dependencies: not needed to run the distributed app.
+#
+# 用法：pip install -r requirements.txt -r requirements-build.txt
+
+# 打包为 Windows 可执行文件（>=6.16 支持 Python 3.14）
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2025.9
+
+# 图标生成（tools/make_icon.py）；assets/icon.ico 已提交入库，常规打包不依赖
+pillow==12.3.0
